@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Affaan Coaching Classes offers Maths and Science coaching for Classes 9–12, with clear explanations, focused practice, and student support.">
+  <meta name="theme-color" content="#123b66">
+  <title>Affaan Coaching Classes | Maths & Science for Classes 9–12</title>
+  <style>
+    :root{--navy:#123b66;--blue:#1769aa;--sky:#eaf4ff;--gold:#f5b942;--ink:#15263a;--muted:#5b6b7d;--white:#fff;--line:#dce6f0}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit}
+    .wrap{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);z-index:5}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:76px}
+    .brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;color:var(--navy);letter-spacing:-.3px}
+    .logo{display:grid;place-items:center;background:var(--navy);color:#fff;border-radius:13px;width:44px;height:44px;font-size:17px;font-weight:900}
+    nav{display:flex;align-items:center;gap:24px}
+    nav a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:650}
+    nav a:hover{color:var(--blue)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;border:0;border-radius:12px;padding:13px 19px;background:var(--blue);color:#fff;text-decoration:none;font-weight:750;box-shadow:0 7px 18px #1769aa2b;transition:transform .18s,background .18s}
+    .btn:hover{background:var(--navy);transform:translateY(-1px)}
+    .btn.light{background:#fff;color:var(--navy);box-shadow:none;border:1px solid var(--line)}
+    .hero{background:radial-gradient(ellipse at 85% 20%,#d6eaff 0,transparent 38%),linear-gradient(135deg,#f5faff,#eaf4ff 58%,#fff);padding:88px 0 76px;overflow:hidden}
+    .hero-grid{display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:54px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);background:#dceeff;padding:7px 12px;border-radius:99px;font-size:12px;font-weight:850;text-transform:uppercase;letter-spacing:1.1px}
+    h1{font-size:clamp(40px,5.5vw,66px);line-height:1.06;letter-spacing:-2.5px;color:var(--navy);margin:22px 0}
+    h1 span{color:var(--blue)}
+    .lead{font-size:18px;color:var(--muted);max-width:590px}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 18px}
+    .note{font-size:13px;color:var(--muted)}
+    .art{position:relative;min-height:340px;display:grid;place-items:center}
+    .orbit{position:absolute;width:310px;height:310px;border:1px dashed #9fc7ed;border-radius:50%}
+    .study-card{position:relative;width:min(350px,100%);padding:28px;border:1px solid #ffffffb8;background:#ffffffd9;box-shadow:0 22px 65px #123b661a;border-radius:26px;transform:rotate(2deg)}
+    .book{display:grid;place-items:center;width:68px;height:68px;background:#fff0c9;border-radius:20px;font-size:32px;margin-bottom:18px}
+    .study-card h3{font-size:25px;color:var(--navy);margin:0 0 6px}
+    .study-card p{color:var(--muted);margin:0}
+    .mini-stats{display:flex;gap:12px;margin-top:22px}
+    .mini{flex:1;background:#f1f7ff;padding:12px;border-radius:14px;font-size:12px;color:var(--muted)}
+    .mini strong{display:block;font-size:19px;color:var(--navy)}
+    section{padding:76px 0}
+    .section-head{text-align:center;max-width:700px;margin:0 auto 38px}
+    .section-head h2{font-size:clamp(29px,4vw,42px);line-height:1.15;letter-spacing:-1.2px;color:var(--navy);margin:10px 0 13px}
+    .section-head p{color:var(--muted);margin:0}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .card{border:1px solid var(--line);border-radius:20px;padding:25px;background:#fff;box-shadow:0 8px 28px #123b6608}
+    .icon{width:49px;height:49px;display:grid;place-items:center;background:var(--sky);border-radius:15px;font-size:23px}
+    .card h3{color:var(--navy);margin:17px 0 8px;font-size:19px}
+    .card p{color:var(--muted);margin:0;font-size:15px}
+    .why{background:#f6faff}
+    .why-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+    .why h2{font-size:clamp(30px,4vw,43px);line-height:1.12;color:var(--navy);letter-spacing:-1.2px;margin:12px 0}
+    .why p{color:var(--muted)}
+    .check-list{display:grid;grid-template-columns:1fr 1fr;gap:15px;margin-top:24px}
+    .check{background:#fff;border:1px solid var(--line);padding:16px;border-radius:14px;font-weight:700;color:var(--navy)}
+    .check span{color:#18845c;margin-right:7px}
+    .contact{background:var(--navy);color:#fff}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+    .contact h2{font-size:clamp(32px,4vw,44px);line-height:1.1;letter-spacing:-1px;margin:0 0 15px}
+    .contact p{color:#d3e3f4}
+    .contact-box{background:#fff;color:var(--ink);padding:28px;border-radius:22px}
+    .contact-box h3{color:var(--navy);margin-top:0}
+    label{display:block;font-size:13px;font-weight:750;margin:14px 0 6px}
+    input,textarea,select{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:10px;font:inherit;color:var(--ink);background:#fff}
+    textarea{min-height:100px;resize:vertical}
+    .contact-box .btn{width:100%;margin-top:17px;cursor:pointer;font:inherit;font-weight:750}
+    .small{font-size:12px;color:var(--muted)}
+    footer{background:#0c2a49;color:#d3e3f4;padding:24px 0;font-size:13px}
+    .footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:800px){nav{gap:12px}nav a:not(.btn){display:none}.hero{padding:60px 0}.hero-grid,.why-grid,.contact-grid{grid-template-columns:1fr;gap:30px}.art{min-height:280px}.orbit{width:260px;height:260px}.cards{grid-template-columns:1fr}.check-list{grid-template-columns:1fr 1fr}section{padding:58px 0}}
+    @media(max-width:420px){h1{letter-spacing:-1.5px}.check-list{grid-template-columns:1fr}.nav{min-height:66px}.brand{font-size:14px}.logo{width:38px;height:38px}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="Affaan Coaching Classes home"><span class="logo">AC</span><span>Affaan Coaching Classes</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#classes">Our approach</a>
+        <a href="#about">Why choose us</a>
+        <a class="btn" href="#contact">Enquire now</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">✦ Learn • Practice • Grow</span>
+          <h1>Build confidence.<br><span>Achieve more.</span></h1>
+          <p class="lead">Build a strong foundation in Maths and Science for Classes 9–12 with clear explanations, focused practice, and supportive guidance.</p>
+          <div class="actions">
+            <a class="btn" href="#contact">Ask about admissions ↗</a>
+            <a class="btn light" href="#classes">Explore our approach</a>
+          </div>
+          <p class="note">Maths & Science • Classes 9–12 • Concept clarity and practice</p>
+        </div>
+        <div class="art" aria-label="Study and learning illustration">
+          <div class="orbit"></div>
+          <div class="study-card">
+            <div class="book">📚</div>
+            <h3>Your goals. Your progress.</h3>
+            <p>Learning works best when questions are welcome and every concept gets the attention it needs.</p>
+            <div class="mini-stats">
+              <div class="mini"><strong>01</strong>Understand</div>
+              <div class="mini"><strong>02</strong>Practise</div>
+              <div class="mini"><strong>03</strong>Improve</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="classes">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">Our approach</span>
+          <h2>Maths & Science, made clearer</h2>
+          <p>Focused coaching for Classes 9–12 to help students understand key concepts, practise questions, and prepare with confidence.</p>
+        </div>
+        <div class="cards">
+          <article class="card"><div class="icon">➗</div><h3>Maths coaching</h3><p>Strengthen core concepts, work through problems step by step, and build confidence with regular practice.</p></article>
+          <article class="card"><div class="icon">🔬</div><h3>Science coaching</h3><p>Make important ideas easier to understand with clear explanations and a focus on the fundamentals.</p></article>
+          <article class="card"><div class="icon">📝</div><h3>Revision and practice</h3><p>Build a steady study routine with practice questions, revision, and attention to topics that need extra work.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="why" id="about">
+      <div class="wrap why-grid">
+        <div>
+          <span class="eyebrow">Why learn with us</span>
+          <h2>Support that helps you move forward.</h2>
+          <p>Affaan Coaching Classes supports students in Classes 9–12 with Maths and Science coaching. The focus is on understanding concepts, asking questions, and practising regularly to prepare with confidence.</p>
+          <a class="btn" href="#contact">Talk to us</a>
+        </div>
+        <div class="check-list">
+          <div class="check"><span>✓</span>Friendly learning environment</div>
+          <div class="check"><span>✓</span>Clear, step-by-step guidance</div>
+          <div class="check"><span>✓</span>Practice and revision focus</div>
+          <div class="check"><span>✓</span>Student-focused support</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact-grid">
+        <div>
+          <span class="eyebrow">Get in touch</span>
+          <h2>Let’s talk about your learning goals.</h2>
+          <p>Want to know about subjects, batches, timings, or admissions? Send an enquiry and we’ll help you take the next step.</p>
+          <p><strong>Affaan Coaching Classes</strong><br>Maths &amp; Science coaching for Classes 9–12.</p>
+          <p class="actions"><a class="btn light" id="call-link" href="tel:+918788693798">Call us</a><a class="btn light" id="whatsapp-link" href="https://wa.me/918788693798">WhatsApp us</a></p>
+        </div>
+        <div class="contact-box">
+          <h3>Enquiry form</h3>
+          <form id="enquiry-form">
+            <label for="student">Student / Parent name</label>
+            <input id="student" name="student" autocomplete="name" placeholder="Your name" required>
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="Your contact number" required>
+            <label for="class">Class / Subject</label>
+            <select id="class" name="class" required>
+              <option value="" disabled selected>Select a class and subject</option>
+              <option>Class 9 — Maths</option><option>Class 9 — Science</option><option>Class 9 — Maths and Science</option>
+              <option>Class 10 — Maths</option><option>Class 10 — Science</option><option>Class 10 — Maths and Science</option>
+            </select>
+            <label for="message">Your question (optional)</label>
+            <textarea id="message" name="message" placeholder="Tell us what you would like to know"></textarea>
+            <button class="btn" type="submit">Enquire on WhatsApp ↗</button>
+            <p class="small">This opens WhatsApp with your enquiry ready to send. Add your WhatsApp number in the website code first. Your phone number can also be shown as a call button once you add it below.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row"><span>© <span id="year"></span> Affaan Coaching Classes</span><span>Learn with confidence. Grow with purpose.</span></div>
+  </footer>
+  <script>
+    // IMPORTANT: Add your real contact numbers before publishing.
+    // Use digits only for WhatsApp, including country code (India: 918788693798).
+    // Phone number can include +, spaces, or hyphens for the call link.
+    const WHATSAPP_NUMBER = "918788693798";
+    const PHONE_NUMBER = "+91 87886 93798";
+    const cleanPhone = PHONE_NUMBER.replace(/[^0-9+]/g, "");
+    document.getElementById("call-link").href = "tel:" + cleanPhone;
+    document.getElementById("whatsapp-link").href = "https://wa.me/" + WHATSAPP_NUMBER;
+    document.getElementById("year").textContent = new Date().getFullYear();
+    document.getElementById("enquiry-form").addEventListener("submit", function(event) {
+      event.preventDefault();
+      if (WHATSAPP_NUMBER === "918788693798") {
+        alert("Before using the enquiry form, replace the sample WhatsApp number in index.html with your own WhatsApp number including country code.");
+        return;
+      }
+      const data = new FormData(event.currentTarget);
+      const message = [
+        "Hello Affaan Coaching Classes, I would like to enquire.",
+        "Name: " + data.get("student"),
+        "Phone: " + data.get("phone"),
+        "Class / Subject: " + data.get("class"),
+        "Question: " + (data.get("message") || "Please share more details.")
+      ].join("\n");
+      window.open("https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message), "_blank", "noopener,noreferrer");
+    });
+  </script>
+</body>
+</html>
